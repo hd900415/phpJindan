@@ -1,0 +1,654 @@
+.main {
+    
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.vending {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    display: -webkit-box;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(../image/back.png) bottom center no-repeat #efeff4;
+    background-size: 100% 100%;
+}
+
+.vending {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+}
+.lipa{
+    position: absolute;
+    width: 100%;
+    height:4.1vh;
+    z-index: 2;
+    bottom: 1.15rem;
+    display: block;
+    left: 0;
+}
+.vending_box{
+        width: 48.08642vh;
+    height:100%;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+        box-sizing: border-box;
+    padding-bottom: 1.15rem;
+}
+.vending_box_teo{
+    height:77.4vh;
+    width:100%;
+    position: relative;
+}
+.vending_boximg{
+    width:100%;
+    height:100%;
+
+}
+.huab{
+        width:115%;
+    height: 25.4vh;
+    position: absolute;
+    left: -5vh;
+    z-index: 1;
+        top: 1.9vh;
+}
+.box_muiab{
+  width: 39.9vh;
+    height: 69vh;
+    position: absolute;
+    top: 2.9vh;
+    left: 2vh;
+  /*  background: rgba(0,0,0,0.5);*/
+}
+.box_muiab_poi{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+    bottom: 55vh;
+    left: 3vh;
+    z-index: 1; 
+}
+.gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 52vh;
+    left: 5vh;
+    z-index: 2;
+}
+.butom2 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+    bottom: 55vh;
+    left: 15vh;
+    z-index: 1;
+}
+
+.butom2 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 52vh;
+    left: 17vh;
+    z-index: 2;
+}
+.butom3 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+    bottom: 55vh;
+    left:26vh;
+    z-index: 1;
+}
+
+.butom3 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 52vh;
+    left:28vh;
+    z-index: 2;
+}
+.butom4 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+    bottom: 41vh;
+    left: 3vh;
+    z-index: 1;
+}
+
+.butom4 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 38vh;
+    left: 5vh;
+    z-index: 2;
+}
+.butom5 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+     bottom: 41vh;
+   left: 15vh;
+    z-index: 1;
+}
+
+.butom5 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+     bottom: 38vh;
+   left: 17vh;
+    z-index: 2;
+}
+.butom6 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+    bottom: 41vh;
+   left: 26vh;
+    z-index: 1;
+}
+
+.butom6 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 38vh;
+        left: 28vh;
+    z-index: 2;
+}
+
+.butom7 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+    bottom: 28vh;
+    left: 3vh;
+    z-index: 1;
+}
+
+.butom7 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 25vh;
+    left: 5vh;
+    z-index: 2;
+}
+.butom8 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+     bottom: 28vh;
+   left: 15vh;
+    z-index: 1;
+}
+
+.butom8 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 25vh;
+    left: 17vh;
+    z-index: 2;
+}
+.butom9 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+      bottom: 28vh;
+   left: 26vh;
+    z-index: 1;
+}
+
+.butom9 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 25vh;
+       left: 28vh;
+    z-index: 2;
+}
+
+.butom10 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+    bottom: 14vh;
+    left: 3vh;
+    z-index: 1;
+}
+
+.butom10 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 11vh;
+    left: 5vh;
+    z-index: 2;
+}
+.butom11 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+    bottom: 14vh;
+   left: 15vh;
+    z-index: 1;
+}
+
+.butom11 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 11vh;
+    left: 17vh;
+    z-index: 2;
+}
+.butom12 .gift{
+    width: 7.7vh;
+    height: 8.8vh;
+    position: absolute;
+     bottom: 14vh;
+   left: 26vh;
+    z-index: 1;
+}
+
+.butom12 .gift_two{
+    width: 3.9vh;
+    height: 3.9vh;
+    position: absolute;
+    bottom: 11vh;
+        left: 28vh;
+    z-index: 2;
+}
+.current {
+    -webkit-transition: 0.5s all;
+    /* 适用Safari 和 Chrome兼容 */
+    transition: 0.5s;
+    -webkit-transform: scale(1.2);
+    /*在Safari 和 Chrome兼容下还原*/
+    z-index: 0;
+    transform: scale(1.2);
+    /*适用于所有浏览兼容下还原*/
+}
+.Exit {
+    position: absolute;
+    bottom: 0vh;
+    left: 1vh;
+    width:100%;
+}
+
+.Exit_ona {
+        width: 82%;
+    height: 6.4vh;
+    /* background: #000; */
+    position: relative;
+    border: 0.1rem solid #ced0c9;
+    perspective: 150;
+    -webkit-perspective: 600;
+    z-index: 2;
+}
+
+.Exit_ona_yua {
+    position: absolute;
+    width: 94%;
+    background: rgba(38, 42, 44, 0.8);
+    height: 100%;
+    top: 0rem;
+    left: 0.9vh;
+    z-index: 1;
+    /* transform: rotateX(45deg); */
+    -webkit-transform: rotateX(-10deg);
+}
+.xuya{
+    /*transform: rotateX(45deg);*/
+    -webkit-transform: rotateX(-50deg);
+      
+    transition: all 0.5s; 
+          top: -1vh;
+}
+.gfuia {
+    width: 6.8vh;
+    height: 13.6vh;
+    position: absolute;
+    top: 10vh;
+   right: 1.5vh;
+    z-index: 2;
+}
+.goshu{
+     width: 6.8vh;
+    height: 13.6vh;
+    position: absolute;
+    top: 27vh;
+   right: 1.5vh;
+    z-index: 2;
+}
+.meiau{
+    width: 6.8vh;
+    height: 11.6vh;
+    position: absolute;
+    top: 48vh;
+    right:1vh;
+    z-index: 2;
+     display: -webkit-box;      
+  display: -moz-box;        
+  display: -ms-flexbox;      
+  display: -webkit-flex;     
+  display: flex;   
+  -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    padding-bottom:0.2rem;
+    box-sizing: border-box;
+    background:url(../image/meiau.png)no-repeat;
+    background-size:100% 100%;
+    font-size:0.2rem;
+    color:#b41d23;
+    
+}
+.meiau p{
+     display: -webkit-box;      
+  display: -moz-box;        
+  display: -ms-flexbox;      
+  display: -webkit-flex;     
+  display: flex; 
+   -webkit-align-items:center;
+    -moz-align-items: center;
+     -ms-align-items: center;
+    align-items: center;
+    font-size:0.3rem;
+}
+.meiau span{
+    font-size:0.23rem;
+    color:#meiau;
+    font-weight: 700;
+}
+.phone {
+    width: 6.2vh;
+    height: 6.2vh;
+    position: absolute;
+    bottom: 1vh;
+        right: 2vh;
+    z-index: 2;
+    display:block;
+}
+.phone img{
+    width: 6.2vh;
+    height: 6.2vh;
+    position: absolute;
+    bottom: 7vh;
+    right: 1vh;
+    z-index: 2;
+    display: block;
+}
+.ypumi {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    -webkit-align-items: flex-end;
+    -webkit-justify-content: center;
+    display: flex;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+.specification {
+    width: 80%;
+    height: 8.08rem;
+    background: #fff;
+    border-radius: 0.15rem;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    position: relative;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+.specification h3 {
+    color: #121212;
+    font-size: 0.45rem;
+    margin: 0.7rem 0 0.6rem 0;
+}
+.huai {
+    position: relative;
+}
+.instruction {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-bottom: 0.4rem;
+    z-index: 1;
+}
+.instruction img {
+    width: 0.42rem;
+    height: 0.42rem;
+    z-index: 1;
+}
+.instruction span {
+    color: #666666;
+    font-size: 0.28rem;
+    margin-left: 0.14rem;
+}
+.miau {
+    width: 2.77rem;
+    height: 3.1rem;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 1.31rem;
+}
+.aiSAsaa {
+    width: 0.55rem;
+    height: 0.55rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+}
+.specification h3 {
+    color: #121212;
+    font-size: 0.45rem;
+    margin: 0.7rem 0 0.6rem 0;
+}
+.cioa {
+    width: 100%;
+    text-align: left;
+}
+.p_lsai {
+    color: #333333;
+    font-size: 0.26rem;
+    margin-bottom: 0.25rem;
+}
+.ukiak li {
+    color: #333333;
+    font-size: 0.25rem;
+    list-style: disc;
+    margin-left: 0.25rem;
+    box-sizing: border-box;
+}
+.aiSAsaa {
+    width: 0.55rem;
+    height: 0.55rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+}
+.vending_twoa{
+    width:100%;
+    height:100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+}
+.shop_bag{
+    width: 72vh;
+    height: 91vh;
+    position: relative;
+    margin-bottom: 9vh;
+}
+.shop_bagimg{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.shop_bau{
+    width: 73%;
+    height: 68vh;
+    position: absolute;
+    bottom: 14vh;
+    left: 3vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    
+}
+.fuaia{
+    width: 33%;
+    /*height: 13vh;*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    justify-flex-direction: column;
+    -webkit-box-pack: justify;
+    /*-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;*/
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.fuaia img{
+    width: 10.2vh;
+    height: 10.2vh;
+}
+.fuaia p{
+    color: #333333;
+	font-weight: bolder;
+    font-size: 2vh;
+    display: inline-block;
+}
+.fuaia1{
+    padding: 13vh 0 0;
+    box-sizing: border-box;
+}
+
+.fuaia2{
+    padding:0vh 0 0;
+    box-sizing: border-box;
+}
+.fuaia3{
+    padding:4vh 0 0;
+    box-sizing: border-box;
+}
+.shop_bagjhoau{
+    width: 5.9vh;
+    height: 15.6vh;
+    
+    position: absolute;
+    right: 6vh;
+    top: 20vh;
+    z-index: 2;
+
+}
+.shop_bagjhoao{
+    width: 5.9vh;
+    height: 15.6vh;
+    
+    position: absolute;
+    right: 6vh;
+    top: 58vh;
+    z-index: 2;
+}
+.shop_bagjhoaa{
+    width: 5.9vh;
+    height: 6.6vh;
+    position: absolute;
+    right: 5vh;
+    top: 43vh;
+    z-index: 2;
+}
+.avda{
+        top: 42vh;
+    right: 5.3vh;
+}
+

@@ -1,0 +1,285 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>幸运金蛋</title>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/addons/hc_wish/template/mobile/js/flexible.min.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+    <script type="text/javascript" src="/addons/hc_wish/template/mobile/js/layer/layer.js"></script>
+    <link rel="stylesheet" href="/addons/hc_wish/template/mobile/css/css.css" />
+    <link rel="stylesheet" href="/addons/hc_wish/template/mobile/css/buy.css" />
+    <link rel="stylesheet" href="/static/wap/font/iconfont.css">
+    <style type="text/css">
+        .shadows {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+            display: none;
+        }
+    </style>
+     <style>
+       .flex-between{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+       .flex-center{
+        display: flex;
+        align-items: center;
+      }
+      .flex-center-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  .zhifu{
+    text-align:center;
+    padding: 0.2rem 0;
+  }
+  .zhifu .type{
+      width: 2.5rem;
+    color:#333;
+    font-size: 0.35rem;
+    background:white url(/static/wap/images/type02.png) left no-repeat;
+    background-size: 0.34rem 0.34rem;
+    /* background-position:0% 50%; */
+  }
+  .zhifu .db{
+      width: 2.5rem;
+      background:white url(/static/wap/images/type01.png) left no-repeat;
+      background-size: 0.34rem 0.34rem;
+      background-position:0% 50%;
+  }
+    </style>
+</head>
+
+
+<body>
+    <div class="bagf">
+        <!-- <div class="juaio">
+            <span>支付方式</span>
+            <span>在线支付</span>
+        </div> -->
+        <section class="zhifu flex-between" >
+          <p style="font-size: 0.3rem;padding-left: 0.2rem;">选择方式</p>
+          <div class="flex-center">
+              <div class="type db" data-type="1">兑换积分</div>
+              <div class="type" data-type="2">立即发货</div>
+          </div>
+      </section>
+      <div class="_ixiraq"></div>
+      <div class="info" style="display: none;">
+        <div class="shadows"></div>
+        {if !$address}
+        <a href="{:url('index/address_list')}">
+            <div class="conyai">
+                <img src="/addons/hc_wish/template/mobile/image/76f0e5d521a8a18dbeeea127519094bb.png" alt="" />
+                <p>您还没有选择地址，点击立刻设置地址</p>
+            </div>
+        </a>
+        {else}
+        <a style="-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        -webkit-user-select: none;" href="{:url('index/address_list')}" class="contact">
+            <img class="contact_img" src="/addons/hc_wish/template/mobile/image/dizh.png" alt="" />
+            <div class="contact_view">
+                <div class="contact_viewpny">
+                    <span>收货人:{$address['name']}</span>
+                    <span>{$address['phone']}</span>
+                </div>
+                <span class="soan">{$address['address']}</span>
+  
+            </div>
+            <div href="{:url('index/address_list')}">
+                <img class="right" src="/addons/hc_wish/template/mobile/image/right.png" alt="" />
+            </div>
+        </a>
+        {/if}
+        <div class="_ixiraq"></div>
+      </div>
+
+
+        <div class="mian_sda">
+            <img class="mian_sda_img" src="{$goods['goods_image']}" alt="" />
+            <div class="mian_sdaview">
+                <span class="xybox">商品名称</span>
+                <span class="xybox1">{$goods['goods_name']}</span>
+                <p>
+                    <!-- <span class="xybox2">￥</span> -->
+                    <span class="xybox3">{$goods['jifen']}积分</span>
+                </p>
+            </div>
+            <div class="juail">
+
+                <!-- <span class="jian" id="minus">-</span> -->
+                <span id="num">x1</span>
+                <!-- <span class="jia" id="plus">+</span> -->
+            </div>
+        </div>
+        <div class="juaio youfei" style="display: none;">
+            <span>邮费</span>
+            <span>￥{:config('site.youfei')}</span>
+        </div>
+        <!-- <div class="juaio juaio2">
+            <span>购买协议</span>
+            <img src="/addons/hc_wish/template/mobile/image/right.png" alt="" />
+        </div> -->
+    </div>
+    <!-- 发货 -->
+    <div class="quzh fahuo" style="display: none;">
+        <div class="quzh_he">
+            <span>合计：</span>
+            <span id="numa">￥{:config('site.youfei')}</span>
+        </div>
+        <span class="quahua">
+            <a id="tn" style="color:#fff;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);-webkit-user-select: none;">
+                去支付
+            </a>
+        </span>
+    </div>
+    <!-- 兑换 -->
+    <div class="quzh duihuan">
+      <div class="quzh_he">
+          <span>合计：</span>
+          <span >{$goods['jifen']}积分</span>
+      </div>
+      <span class="quahua">
+          <a class="dh_btn" style="color:#fff;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);-webkit-user-select: none;">
+              立即兑换
+          </a>
+      </span>
+  </div>
+    <div class="ypumi" style="display:none" id="huai">
+        <div class="specification">
+            <img class="aiSAsaa" src="/addons/hc_wish/template/mobile/image/guanh.png" alt="">
+            <h3>购买须知</h3>
+            <div class="csaia" style="overflow-y: auto;">
+                {:config('site.buy_desc')}
+            </div>
+        </div>
+    </div>
+<!--     <div class="recharge" id="recharge" style="display: none;">
+
+        <div class="closeNotices" onclick="closeNotice(this)" id="closecharge">✕</div>
+
+        <div class="column">
+
+            <img class="chargeimg" src="/addons/hc_wish/public/recharge.png" alt="">
+
+            <span>余额不足</span>
+
+            <div class="payBtn" onclick="buy()">去充值</div>
+
+        </div>
+
+    </div> -->
+
+    <div class="notices" id="buy" style="display: none;max-height: none;">
+
+        <div class="closeNotices" onclick="closeNotice(this)" id="closebuy">✕</div>
+
+        <div class="pricetitle">请选择支付方式</div>
+
+        <div style="color:#000000;margin:20px 0 -20px;text-align: center;">
+
+        </div>
+
+        <div class="flex coins">
+
+
+        </div>
+
+        <div class="pricelist between" style="text-align: center;">
+            <div class="priceitem flex" money="" num="1"  onclick="buy('weixin')">
+                <i class="iconfont" style="font-size: 30px;">&#xe60c;</i>
+                <text> 微信支付</text>
+            </div>
+            <div class="priceitem flex" money="" num="1"  onclick="buy('zhifubao')">
+                <i class="iconfont" style="font-size: 30px;">&#xe8e4;</i>
+                <text> 支付宝</text>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+// 模式选择
+$(".zhifu .type").click(function() {
+    $(".zhifu .type").removeClass('db');
+    $(this).addClass('db');
+    var type=$('.zhifu .db').attr('data-type');
+    if(type==1){
+      $('.info').hide()
+      $('.youfei').hide()
+      $('.duihuan').show()
+      $('.fahuo').hide()
+    }else{
+      $('.info').show()
+      $('.youfei').show()
+      $('.duihuan').hide()
+      $('.fahuo').show()
+    }
+});
+// 立即兑换
+$(".dh_btn").click(function(){
+  $.post("{:url('index/duihuan_goods')}",{order_id:"{$order['id']}"},function(data){
+    if(data.code==1){
+     layer.msg(data.msg,function(){
+         location.href="{:url('index/order')}";
+     })
+    }else{
+      layer.msg(data.msg)
+    }
+  })
+})
+
+function buy(){
+    //购买
+    var rece_name = "{$address['name']}";
+    var rece_address = "{$address['address']}";
+    var rece_phone = "{$address['phone']}";
+    $.ajax({
+        type: "GET",
+        url: "{:url('index/zhifu')}",
+        data: { order_id:"{$order['id']}",rece_name:rece_name,rece_address:rece_address,rece_phone:rece_phone},
+        dataType: "json",
+        success: function (data) {
+            if(data.code == 1){
+                layer.msg(data.msg,function(){
+                    location.href="{:url('index/order')}";
+                })
+            }else if(data.code == -1){
+                layer.msg(data.msg,function(){
+                    location.href="{:url('index/chongzhi')}";
+                })
+            }else{
+                layer.msg(data.msg)
+            }
+        }
+    });
+}
+
+
+    $('#tn').click(function () {
+       buy();
+    })
+
+    function closeNotice(obj) {
+        console.log($(obj).attr("id"))
+        var id = $(obj).attr("id")
+        if (id == "closecharge") {
+            $(".shadows").hide()
+            $("#recharge").hide()
+        } else if (id == "closebuy") {
+            $("#buy").hide()
+            $(".shadows").hide()
+        }
+    }
+</script>
+
+</html>

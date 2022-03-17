@@ -1,0 +1,21 @@
+{
+  "name": "zpay/zpaysdk",
+  "description": "基于Z支付API开发的一款SDK",
+  "type": "library",
+  "require": {
+    "php": ">=5.6",
+    "ext-json": "*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "emzyh"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "zpay\\": "src/"
+    }
+  }
+}

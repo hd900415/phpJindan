@@ -1,0 +1,196 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>虎年金蛋</title>
+    <link href="/assets/css/backend.css?v=1639926048" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/addons/hc_wish/template/mobile/js/flexible.min.js"></script>
+    <!--<script src="https://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>-->
+    <script type="text/javascript" src="/addons/hc_wish/template/mobile/js/layer/layer.js"></script>
+
+    <script type="text/javascript">
+        // console.log(location.href.split('#')[0]);
+        // wx.config({
+        //     debug: false,
+        //     appId: "{$wechat['appid']}",
+        //     timestamp: "{$wechat['timestamp']}",
+        //     nonceStr: "{$wechat['noncestr']}",
+        //     signature: "{$wechat['signature']}",
+        //     jsApiList: ['onMenuShareAppMessage', 'onMenuShareTimeline', 'openAddress', 'chooseWXPay', 'chooseImage', 'uploadImage']
+        // });
+        // wx.ready(function () {
+        //     wx.onMenuShareAppMessage({
+        //         title: '',
+        //         desc: '',
+        //         link: '',
+        //         imgUrl: ''
+        //     });
+        //     wx.onMenuShareTimeline({
+        //         title: '',
+        //         link: '',
+        //         imgUrl: ''
+        //     });
+        // })
+        
+    
+
+        //获取共享地址
+        // function openAddress() {
+            
+        //     wx.openAddress({
+        //         success: function (res) {
+                    
+        //             var username = res.userName; // 收货人姓名
+        //             var mobile = res.telNumber; // 收货人手机号码
+        //             var address = res.provinceName + res.cityName + res.countryName + res.detailInfo; // 详细收货地址信息
+                    
+        //             $.ajax({
+        //                 type: "GET",
+        //                 url: "{:url('index/address_add')}",
+        //                 data: { username: username, mobile: mobile, address: address },
+        //                 dataType: "json",
+        //                 success: function (data) {
+                             
+        //                     window.location.reload();
+        //                 }
+        //             });
+        //         }，
+        //         cancel:function(err){
+        //              alert(err);
+        //         }
+        //     });
+        // }
+        
+        function add_address(name,phone,address){
+            
+            l_index =  layer.open({
+              type: 1,
+              shade: false,
+              title: false, //不显示标题
+              area: ['420px', '360px'], //宽高
+              content: `
+                
+                    <div class="content">
+                                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">收货人:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" data-rule="required" value="${name ? name :''}" class="form-control" name="row[name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">手机号:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-phone" data-rule="required" value="${phone ? phone :''}" class="form-control" name="row[phone]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">收获地址:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address" data-rule="required" value="${address ? address :''}" class="form-control" name="row[address]" type="text">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button id="vconfrim"  class="btn btn-success btn-embossed">确定</button>
+            <button id="vcancel" class="btn btn-default btn-embossed">取消</button>
+        </div>
+    </div>
+</form>
+
+                            </div>
+              
+              
+              `
+            });
+              $('#vconfrim').unbind('click');
+               $('#vconfrim').click(function(){
+                
+                    var username = $('#c-name').val(); // 收货人姓名
+                    var mobile = $('#c-phone').val(); // 收货人手机号码
+                    var address = $('#c-address').val(); // 详细收货地址信息
+                    
+                    
+                    if(!username||!mobile||!address){
+                        alert('请填写完整信息');
+                        return;
+                    }
+                    
+                    $.ajax({
+                        type: "GET",
+                        url: "{:url('index/address_add')}",
+                        data: { username: username, mobile: mobile, address: address },
+                        dataType: "json",
+                        success: function (data) {
+                            layer.close(l_index)
+                            window.top.location.href = window.location.href;
+                            window.top.location.reload(true);
+                        }
+                    });
+                
+            })
+             $('#vcancel').unbind('click');
+              $('#vcancel').click(function(){
+                layer.close(l_index)
+            })
+            
+        
+            
+            
+        }
+        
+        
+         
+            
+       
+    </script>
+
+    <link rel="stylesheet" href="/addons/hc_wish/template/mobile/css/css.css" />
+    <link rel="stylesheet" href="/addons/hc_wish/template/mobile/css/address.css" />
+    <link rel="stylesheet" href="/addons/hc_wish/template/mobile/css/pretermit.css" />
+</head>
+
+<body>
+    {if $address}
+    <div class="mainti">
+        <div class="mainlist">
+            <div class="mainlist_sai">
+                <p class="sajk">
+                    <span>【默认】</span>
+                    {$address['name']} {$address['phone']} </p>
+                <p class="suaa">{$address['address']}</p>
+            </div>
+            <span href="javascript:void(0);" style="-webkit-tap-highlight-color: rgba(255, 255, 255, 0);-webkit-user-select: none;" onclick="add_address('{$address['name']}','{$address['phone']}','{$address['address']}')">
+                <img class="cdasa" src="/addons/hc_wish/template/mobile/image/csaca.png" alt="" />
+            </span>
+        </div>
+    </div>
+    {else}
+    <div class="main">
+        <a onclick="openAddress()">
+            <div class="main_view">
+                <img src="/addons/hc_wish/template/mobile/image/zanja.png" alt="" />
+                <p class="shoua">暂无收货地址，立刻添加体验更好购物体验</p>
+            </div>
+        </a>
+    </div>
+    {/if}
+    <!--<div class="diayu">-->
+    <!--    <span id="open" onclick="openAddress()" class="xo9a">选择微信地址</span>-->
+    <!--</div>-->
+     <div class="diayu" onclick="add_address()">
+        <span   class="xo9a">添加地址</span>
+    </div>
+    
+</body>
+
+</html>

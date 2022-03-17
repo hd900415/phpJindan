@@ -1,0 +1,72 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Uid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-uid" data-rule="required" class="form-control" name="row[uid]" type="number" value="{$row.uid|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-level" data-rule="required" class="form-control" name="row[level]" type="number" value="{$row.level|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xj_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-xj_id" data-rule="required" data-source="xj/index" class="form-control selectpage" name="row[xj_id]" type="text" value="{$row.xj_id|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xj_nickname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-xj_nickname" data-rule="required" class="form-control" name="row[xj_nickname]" type="text" value="{$row.xj_nickname|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xj_headimage')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-xj_headimage" data-rule="required" class="form-control" size="50" name="row[xj_headimage]" type="text" value="{$row.xj_headimage|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-xj_headimage" class="btn btn-danger plupload" data-input-id="c-xj_headimage" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-xj_headimage"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-xj_headimage" class="btn btn-primary fachoose" data-input-id="c-xj_headimage" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-xj_headimage"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-xj_headimage"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Price')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-price" data-rule="required" class="form-control" step="0.01" name="row[price]" type="number" value="{$row.price|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Yj_bili')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-yj_bili" data-rule="required" class="form-control" step="0.01" name="row[yj_bili]" type="number" value="{$row.yj_bili|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Yongjin')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-yongjin" data-rule="required" class="form-control" step="0.01" name="row[yongjin]" type="number" value="{$row.yongjin|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_num')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_num" data-rule="required" class="form-control" name="row[order_num]" type="text" value="{$row.order_num|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

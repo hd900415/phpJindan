@@ -1,0 +1,91 @@
+/*reset start*/
+@charset "utf-8";
+html {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none; /*取消浏览器最小字体限制*/
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], input:focus, button:focus, select:focus, textarea:focus {
+    outline: none;
+}
+
+input {
+    font-family: "微软雅黑";
+    -webkit-appearance: none;
+    resize: none;
+    border-radius: 0;
+}
+
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto \9;
+    -ms-interpolation-mode: bicubic;
+}
+
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+em, i {
+    font-style: normal;
+}
+
+strong {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+img {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/*reset End*/
+body {
+    margin: 0 auto;
+    font-size: 0.6rem;
+    -webkit-text-size-adjust: none !important; /*取消浏览器最小字体限制*/
+    -webkit-overflow-scrolling: touch; /*流畅滚动*/
+    font-family: "Microsoft YaHei", STHeiti, Droid Sans Fallback;
+    -webkit-tap-highlight-color: transparent;
+}

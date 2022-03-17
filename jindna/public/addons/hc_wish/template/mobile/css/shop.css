@@ -1,0 +1,179 @@
+body{
+	background:#feeed4;
+	overflow: hidden;
+}
+.amin {
+	width: 100%;
+	height: 100%;
+overflow: hidden;
+}
+
+.beiyua {
+	width: 100%;
+	height: 65%;
+	display: block;
+
+}
+
+.amin_bot {
+	width: 100%;
+	height: 30%;
+	background: #feeed4;
+	padding-top: 0.68rem;
+}
+
+.amin_bot_box {
+	width: 4.26rem;
+	height: 2.04rem;
+	border: 1px dashed #ff5635;
+	margin: 0 auto;
+	position: relative;
+}
+
+.amin_bot_boxba {
+	width: 2.66rem;
+	height: 0.28rem;
+	background: #f9cfb5;
+	margin: 0 auto;
+	margin-top: -0.1rem;
+}
+
+.amin_bomain {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	width: 100%;
+	height: 1.98rem;
+	margin-top: -0.5rem;
+}
+
+.zoor_box {
+	color: #ef2826;
+	font-size: 0.38rem;
+}
+
+.zoor_boxto {
+	color: #f1231f;
+	font-size: 0.48rem;
+	font-weight: 700;
+}
+
+.zoor_boxtr_num {
+	color: #ef2826;
+	font-size: 0.38rem;
+}
+
+.zoor_boxtr {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.zoor_view {
+	width: 1.7rem;
+	height: 0.4rem;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.minus {
+	width: 0.6rem;
+	height: 0.35rem;
+	border: 1px solid #ff5635;
+	border-radius: 0.6rem;
+	text-align: center;
+}
+
+.minus img {
+	width: 0.33rem;
+	height: 0.33rem;
+}
+
+.submit {
+	width: 3.54rem;
+	height: 0.8rem;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	margin-top:0.36rem;
+}
+
+.submit img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.submit span {
+	color: #ffffff;
+	font-size: 0.32rem;
+	line-height: 0.81rem;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	left: 0;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.yuan {
+	width: 0.10rem;
+	height: 0.10rem;
+	border-radius: 100%;
+	border: 2px solid #ffcfb9;
+	position: absolute;
+	top: -0.2rem;
+	left: 12%;
+}
+
+.sad{
+	width:0.12rem;
+	height:0.12rem;
+	display:block;
+	position: absolute;
+	top: 0.1rem;
+	left: 12%;
+	
+}
+.sada{
+	width:0.12rem;
+	height:0.12rem;
+	display:block;
+	position: absolute;
+	top: 0.1rem;
+	right: 12%;
+}
+.rightr{
+	width: 0.10rem;
+	height: 0.10rem;
+	border-radius: 100%;
+	border: 2px solid #ffcfb9;
+	position: absolute;
+	top: -0.2rem;
+	right: 12%;
+}
+
+

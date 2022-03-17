@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2021-07-03T08:59:03+08:00 ] 175.21.46.255 GET manghe.5151x.com.cn:88/admin.php/user/edit/ids/5052?dialog=1
+[ error ] [0]类的属性不存在:app\admin\model\User->yiji_bili
+---------------------------------------------------------------
+[ 2021-07-03T08:59:09+08:00 ] 175.21.46.255 GET manghe.5151x.com.cn:88/admin.php/user/edit/ids/5052?dialog=1
+[ error ] [0]类的属性不存在:app\admin\model\User->yiji_bili

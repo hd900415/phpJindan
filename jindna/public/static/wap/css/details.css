@@ -1,0 +1,102 @@
+body{
+    background-color: #faecee;
+}
+.content{
+    background-color: #fff;
+    padding-bottom: 2rem;
+}
+.tab{
+    margin-top: .5rem;
+    padding: .75rem;
+    display: block;
+    border-bottom: 1px solid rgba(134,106,106,.2);
+}
+.tab tr td{
+    width: 75%;
+    padding-bottom: .5rem;
+}
+
+.order td{
+    color: #605152;
+    font-size: .6rem;
+
+}
+
+.zhuangtai td{
+    color: #3D3435;
+    font-size: .8rem;
+}
+.order-box{
+    display: flex;;
+justify-content: space-between;
+    padding: 1rem .8rem 0rem .8rem;
+}
+.order-box p{
+    color: #605152;
+    font-size: .6rem;
+    padding-top: .75rem;
+
+}
+.order-box p span{
+    display: block;
+}
+.wu img{
+    width: 1.9rem;
+    height: 2rem;
+}
+.price{
+    text-align: right;
+    color: #FF5251;
+    font-size: .6rem;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}
+.information{
+    border-top: 1px solid rgba(134,106,106,.21);;
+    padding: 1rem 0rem 1rem .8rem;
+    margin-top: .5rem;
+}
+.dian{
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: #C9AEAE;
+    position: absolute;
+    left: .75rem;
+}
+.city span{
+    display: block;
+
+}
+.state{
+
+    /*margin-left: 1rem;*/
+}
+.state li{
+    border-left: 1px solid #C9AEAE;
+    /*margin-left: .75rem;*/
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: .75rem;
+}
+.state li span{
+    font-size: .5rem;
+
+}
+.state li p{
+    display: inline-block;
+    margin-left: 1rem;
+}
+.fist{
+    color: #FF5251;
+}
+.liu{
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    left: .75rem;
+}
+.last{
+    border-left: 0 !important;
+}

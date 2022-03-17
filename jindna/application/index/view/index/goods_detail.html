@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>商品详情</title>
+    <link rel="stylesheet" href="/static/wap/css/reset.css">
+    <link rel="stylesheet" href="/static/wap/css/detail.css">
+    <script type="text/javascript" src="/static/wap/js/pxtorem.js"></script>
+    <link rel="stylesheet" href="/static/wap/swiper/swiper.min.css">
+    <link rel="stylesheet" href="/static/wap/css/font-awesome.min.css">
+
+    <style>
+      .address{
+        background-color: #fcfcfc;
+        border-top: 1px solid #eaeaea;
+        padding:0.625rem 0.5rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+      }
+      .address .zhi{
+        color: #9a9a9a;
+      }
+      .address .info{
+        width: 75%;
+        display: inline-block;
+        color: #333;
+      }
+      .address .fa{
+        color: #969696
+      }
+      .address .fa-angle-right{
+        font-size: 1rem;
+      }
+    </style>
+</head>
+<body>
+<section id="banner_game" class="bg_white">
+    <div class="swiper-wrapper">
+        {if($goods['goods_images'])}
+        {foreach($goods['goods_images'] as $k =>$v)}
+        <div class="swiper-slide"><img src="{$v}" /></div>
+        {/foreach}
+        {/if}
+    </div>
+    <div class="pagination"></div>
+</section>
+<section class="bg_white">
+    <section class="w88">
+        <div class="title">{$goods['goods_name']}</div>
+        <div class="fl">
+            <b class="price"><i>{$goods['jifen']}积分</i></b>
+        </div>
+        <div class="clear"></div>
+        <div class="xq_bottom">
+            <!-- <div class="xiaoliang">月销量75</div>
+            <div class="yunfei">运费：0.00</div> -->
+        </div>
+        <div class="clear"></div>
+    </section>
+</section>
+<section class="address">
+  <a href="">
+      <div class="fl">
+          <i class="fa fa-caret-right"></i>
+          <span class="zhi">配送至：</span>
+      </div>
+      {if !$address}
+      <span class="info">您还未填写收货信息，马上去填写。</span>
+      {else /}
+      <p class="info">
+        <span class="address">{$address['address']}</span><br>
+        <span class="name" style="padding-left: 0.5rem;">{$address['name']}</span>
+        <span class="phone">{$address['phone']}</span>
+      </p>
+      {/if}
+      <i class="fa fa-angle-right fr"></i>
+  </a>
+</section>
+<section class="bg_white xqt">
+    <div class="ts">
+        <span class="hx"></span>
+        <p>商品详情</p>
+        <span class="hx"></span>
+    </div>
+    {$goods['content']}
+</section>
+<section class="payment-bar">立即兑换</section>
+<script type="text/javascript" src="/static/wap/js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="/static/wap/layer/layer.js"></script>
+<script type="text/javascript" src="/static/wap/swiper/swiper.min.js"></script>
+
+<script type="text/javascript">
+//轮播图
+var mySwiper2 = new Swiper('#banner_game',{
+  autoplay:true,
+  visibilityFullFit : true,
+  loop:true,
+  pagination : {
+      el:'.pagination',
+  }
+});
+var goods_id = "{$goods['id']}";
+var rece_name = "{$address['name'] ?: ''}";
+var rece_address = "{$address['address'] ?: ''}";
+var rece_phone = "{$address['phone'] ?: ''}";
+$('.payment-bar').click(function(){
+  if(!rece_name || !rece_phone || !rece_address){
+    layer.msg('收获地址错误');
+    return false;
+  }
+  $.post("{:url('index/duihuan_jifen')}",{goods_id:goods_id,rece_name:rece_name,rece_phone:rece_phone,rece_address:rece_address},function(data){
+    if(data.code == 1){
+      layer.msg(data.msg,function(){
+        location.href = "{:url('index/order')}";
+        return false;
+      })
+    }else{
+      layer.msg(data.msg);
+    }
+  })
+})
+</script>
+</body>
+</html>

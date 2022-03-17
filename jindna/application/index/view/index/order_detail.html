@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <meta name="keywords" content="" />
+    <!--搜索关键字-->
+    <meta name="description" content="" />
+    <!--页面描述-->
+    <meta name="author" content="" />
+    <!--作者-->
+    <link rel="stylesheet" href="/static/wap/components/css/reset.css" />
+    <link rel="stylesheet" href="/static/wap/css/details.css" />
+    <script src="/static/wap/components/typeface.js"></script>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<style>
+.tab tr td {
+    padding-right: 2rem;
+}
+.add-r{
+    display: inline-block;
+    height: 1rem;
+    line-height: 1rem;
+    background:linear-gradient(90deg,rgba(93,131,255,1),rgba(51,106,231,1));
+    border-radius: 1rem;
+    padding: 0rem .5rem 0rem .5rem;
+    color: #fff;
+    font-size: .6rem;
+    margin-top: .5rem
+}
+.add-div{
+    text-align: right;
+    margin-right: .75rem;
+}
+</style>
+<body>
+    <section class="content">
+        {if $order['status'] == '1'}
+        <a href="{:url('index/cart')}?order_id={$order['id']}">
+        {/if}
+        <table class="tab">
+            <tr class="order">
+                <td>订单</td>
+                <td>状态</td>
+            </tr>
+            <tr class="zhuangtai">
+                <td style="
+                font-family:PingFang-SC-Medium;
+                font-weight:600;
+                color:rgba(61,52,53,1);">#{$order['order_num']}</td>
+                <td style="
+                font-family:PingFang-SC-Medium;
+                font-weight:bold;
+                font-size:0.75rem;
+                color:rgba(61,52,53,1);">{:order_status($order['status'])}</td>
+        </table>
+        </tr>
+        {if $order['status'] == '1'}
+        </a>
+        {/if}
+        <div class="order-box">
+            <div>
+                <p>产品</p>
+                <p>
+                    <span style="
+                    font-family:PingFang-SC-Medium;
+                    font-weight:bold;
+                    color:rgba(61,52,53,1);">{$goods['goods_name']}</span>
+                    
+                </p>
+            </div>
+            <div>
+                <p>数量</p>
+                <p style="font-family:PingFang-SC-Medium;
+                font-weight:600;">x1</p>
+            </div>
+            <div>
+                <p>图片</p>
+                <p class="wu"><img src="{$goods['goods_image']}"></p>
+            </div>
+        </div>
+        <div class="price" style="font-family:PingFang-SC-Bold;
+        font-weight:bold;
+        color:rgba(255,82,81,1);">{$goods['jifen']}积分</div>
+
+        <div style="border-top: 1px solid rgba(134,106,106,.21);
+        padding: 0.5rem 0rem 0rem .8rem;
+        margin-top: .5rem;">
+            <p>收货信息</p>
+            
+            <div style="height:0.5rem;"></div>
+            <p><span style="
+                font-family:PingFang-SC-Medium;
+                font-weight:600;
+                color:rgba(61,52,53,1);">{$order['rece_name']}<span style="margin-left:1rem">{$order['rece_phone']}</span></span>
+            </p>
+            <div style="height:0.5rem;"></div>
+            <p>
+                <span style="
+                    font-family:PingFang-SC-Medium;
+                    font-weight:600;
+                    color:rgba(61,52,53,1);">{$order['rece_address'] ?: '暂无'}</span>
+            </p>
+            
+        </div>
+        <div class="information">物流信息:{$order['express_num']}</div>
+        <ul class="state">
+            {if $wuliu}
+                {if $wuliu['code'] == 1}
+                    {if count($wuliu['data']) == 1}
+                        <li class="fist">
+                            <img class="liu" src="/public/static/wap/images/xuanhzonfg.png">
+                            <p class="city"><span>{$wuliu['data'][0]['context']}</span><span>{$wuliu['data'][0]['time']}</span></p>
+                        </li>
+                    {else/}
+                        {foreach $wuliu['data'] as $k=>$v}
+                            {if $k==0}
+                            <li class="fist">
+                                <img class="liu" src="/public/static/wap/images/xuanhzonfg.png">
+                                <p class="city"><span>{$v['context']}</span><span>{$v['time']}</span></p>
+                            </li>
+                            {elseif $k==(count($wuliu['data'])-1) /}
+                            <li class="last"><span class="dian "></span>
+                                <p class="city"><span>{$v['context']}</span><span>{$v['time']}</span></p>
+                            </li>
+                            {else /}
+                            <li><span class="dian"></span>
+                                <p class="city"><span>{$v['context']}</span><span>{$v['time']}</span></p>
+                            </li>
+                            {/if}
+                        {/foreach}
+                    {/if}
+                {else /}
+                <div style="color:#666;text-align:center;margin-top:1.25rem">暂无物流信息</div>
+                {/if}
+            {else /}
+            <div style="color:#666;text-align:center;margin-top:1.25rem">暂无物流信息</div>
+            {/if}
+        </ul>
+    </section>
+</body>
+<script>
+function add_address(id){
+    location.href = "{:url('user/add_address')}?youxi_id="+id;
+}
+</script>
+</html>

@@ -1,0 +1,541 @@
+.banner {
+    min-width:1000px;
+    position:relative;
+    height:380px;
+    overflow:hidden;
+    border-bottom: 1px solid #ddd;
+}
+.banner .bd {
+    position:relative;
+    z-index:0;
+}
+.banner .bd ul {
+    width:100% !important;
+}
+.banner .bd li {
+    width:100% !important;
+    height:380px;
+}
+.banner .bd li .siteWidth {
+    width:1000px;
+    position:relative;
+    margin:0 auto;
+    height:380px;
+}
+.banner .bd li a {
+    position:absolute;
+    width:100%;
+    height:380px;
+    display:block;
+    z-index:1;
+    ;
+}
+.banner .bd li a img {
+    width: 1920px;
+    max-width:none;
+}
+.banner .hd {
+    width:100%;
+    position:absolute;
+    z-index:1;
+    bottom:0;
+    left:0;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+}
+.banner .hd ul li {
+    cursor:pointer;
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    width:11px;
+    height:11px;
+    margin:6px;
+    overflow:hidden;
+    line-height:9999px;
+    border: 1px solid #e53e3e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.banner .hd ul .on {
+    background: #e53e3e;
+}
+.imain {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.imain .tips {
+    height: 60px;
+    border: 1px solid #ddd;
+    border-top: 0;
+    overflow: hidden;
+    background: #fff;
+}
+.imain .tips .left {
+    width: 750px;
+    height:30px;
+    margin: 15px 0;
+    border-right: 1px solid #ddd;
+    line-height: 30px;
+    color: #333;
+}
+.tips .left .icon {
+    padding: 0 15px 0 55px;
+    display: block;
+    float:left;
+    border-right: 1px solid #eee;
+    background: url(../img/icon2.jpg) no-repeat;
+    background-position: 20px 6px;
+}
+.tips .left ul {
+    overflow: hidden;
+}
+.tips .left ul li {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+.tips .left ul a {
+    color: #666;
+    display: block;
+}
+.tips .left ul a:hover {
+    color: #E53E3E;
+}
+.tips .left ul a span {
+    float: right;
+    color: #999;
+}
+.tips .right {
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    float: left;
+}
+.tips .right a.what {
+    font-size: 18px;
+    display: block;
+    height: 40px;
+    width: 230px;
+    overflow: hidden;
+}
+.tips .right a.what img {
+    display: none;
+}
+.tips .right a.what img.s1 {
+    display: block;
+    width: 500px;
+    max-width:500px;
+    height: 300px;
+    margin-top: -131px;
+    margin-left: -130px;
+}
+.box-line {
+    overflow: hidden;
+    margin-top: 15px;
+}
+.ibox {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    background: #fff;
+}
+.ibox .hd {
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    line-height: 50px;
+    padding: 0 20px;
+}
+.ibox .hd h2 {
+    font-size: 20px;
+    color: #e53e3e;
+    font-weight:normal;
+    float: left;
+    line-height: 50px;
+}
+.ibox .hd a {
+    float: right;
+    color: #E53E3E;
+}
+.ibox .hd a:hover {
+    text-decoration: underline;
+}
+.ibox .bd {
+    padding: 20px;
+}
+.imain .about {
+    width: 373px;
+    float: left;
+}
+.imain .about .bd {
+    height: 256px;
+}
+.imain .about .pic {
+    width: 333px;
+    margin-bottom: 15px;
+}
+.imain .about .pic img {
+    width: 100%;
+    height: auto;
+}
+.imain .about p {
+    color: #666;
+    line-height: 26px;
+    font-size: 15px;
+    max-height: 104px;
+    overflow: hidden;
+    text-indent: 2em;
+}
+.imain .exp {
+    width: 608px;
+    float: right;
+}
+.imain .exp .bd {
+    padding: 10px 20px;
+    height: 276px;
+}
+.imain .exp .bd .pic {
+    width: 578px;
+    height: 276px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.imain .exp .bd .pic img {
+    width: 100%;
+    height:auto;
+}
+.merit {
+    height: 100px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    background: #fff;
+}
+.merit dl {
+    width:25%;
+    margin: 10px 0;
+    cursor: pointer;
+    height: 80px;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: 1px solid #eee;
+    padding-left: 130px;
+    padding-top: 15px;
+    background: url(../img/icon.jpg) no-repeat;
+}
+.merit dl.s1 {
+    background-position:35px 5px;
+}
+.merit dl.s2 {
+    background-position:35px -105px;
+}
+.merit dl.s3 {
+    background-position:35px -215px;
+}
+.merit dl.s4 {
+    background-position:35px -325px;
+}
+.merit dl dt {
+    font-size: 18px;
+    color: #e53e3e;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+.merit dl dd {
+    font-size: 16px;
+    color: #666;
+}
+.merit dl:hover {
+    opacity: 0.8;
+}
+.box-line .news, .box-line .trends {
+    width: 490px;
+    float: left;
+}
+.box-line .news .bd, .box-line .trends .bd {
+    height: 160px;
+    overflow: hidden;
+}
+.box-line .news .bd ul {
+}
+.box-line .news .bd li, .box-line .trends .bd li {
+    line-height: 30px;
+}
+.box-line .news .bd li a, .box-line .trends .bd li a {
+    color: #666;
+    line-height: 32px;
+    display: block;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.box-line .news .bd li a i {
+    width: 5px;
+    height: 5px;
+    vertical-align:middle;
+    display: inline-block;
+    background: #666;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.box-line .news .bd li a span {
+    float: right;
+    color: #999;
+    font-size: 12px;
+}
+.box-line .news .bd li a:hover, .box-line .trends .bd li a:hover {
+    color: #E53E3E;
+}
+.box-line .trends {
+    float: right;
+}
+.box-line .trends .pic {
+    width: 170px;
+    height: 150px;
+    margin-top: 5px;
+    margin-right: 15px;
+    position: relative;
+    float: left;
+}
+.box-line .trends .pic img {
+    width: 170px;
+    height: 150px;
+}
+.box-line .trends .pic p {
+    height: 30px;
+    width:160px;
+    padding: 0 5px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+.box-line .trends .pic a:hover p {
+    text-decoration: underline;
+}
+/**ny**/
+ .m-banner {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background: url(../img/photo/mbanner.jpg) no-repeat;
+    background-position: top center;
+}
+.aside-left {
+    width: 200px;
+    float:left;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.aside-left .navmenu {
+    border-width: 2px 1px 1px 1px;
+    border-color: #E53E3E #ddd #ddd;
+    border-style:solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 15px;
+}
+.aside-left .navmenu .hd {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #E53E3E;
+    border-bottom: 1px solid #eee;
+}
+.aside-left .navmenu .bd {
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.aside-left .navmenu .bd ul {
+}
+.aside-left .navmenu .bd li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.aside-left .navmenu .bd li:last-child {
+    border: 0;
+}
+.aside-left .navmenu .bd a {
+    width:100%;
+    height: 100%;
+    color: #333;
+    display: block;
+}
+.aside-left .navmenu .bd a:hover, .aside-left .navmenu .bd li.active a {
+    color: #fff;
+    background: #666;
+}
+.aside-right {
+    width: 785px;
+    padding-bottom: 10px;
+    float: right;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.aside-right .contant {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 2px #ddd;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.aside-right .contant .hd {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #Ddd;
+    margin: 0 20px;
+}
+.aside-right .contant .hd h1 {
+    font-size: 20px;
+    color: #E53E3E;
+    line-height: 60px;
+    font-weight: normal;
+}
+.aside-right .contant .hd span {
+    float: right;
+    color: #666;
+}
+.aside-right .contant .hd span i {
+    margin: 0 3px;
+}
+.aside-right .contant .hd span a {
+    color: #666;
+}
+.aside-right .contant .hd span a:hover {
+    color: #E53E3E;
+    text-decoration: underline;
+}
+.aside-right .contant .bd {
+    padding: 20px;
+    overflow: hidden;
+}
+.aside-right .contant .about-page {
+    color: #666;
+    line-height:1.8;
+}
+.aside-right .contant .about-page p {
+}
+.aside-right .contant .about-page h3 {
+    color: #4f81bd;
+    font-size: 18px;
+    margin-top: 20px;
+}
+#allmap {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #Ddd;
+    margin-bottom: 20px;
+}
+.aside-right .contant .about-page .contact {
+    border-top: 1px dotted #ddd;
+    padding-top: 20px;
+}
+.aside-right .contant .about-page .contact h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.about-page .table {
+    margin-top: 20px;
+}
+.about-page .table tr.info {
+    background: #d9edf7;
+}
+.about-page .table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+.about-page .table td a {
+    display: block;
+    line-height: 2;
+}
+.contant .bd .news {
+}
+.contant .bd .news li {
+    border-bottom: 1px dotted #ddd;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.contant .bd .news li:last-child {
+    border: 0;
+}
+.contant .bd .news li p.tit {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+.contant .bd .news li p.info {
+    color: #666;
+    margin-bottom: 5px;
+    max-height: 60px;
+    overflow: hidden;
+}
+.contant .bd .news li p.time {
+    color: #999;
+}
+.contant .bd .news li p.tit a:hover {
+    color: #E53E3E;
+}
+.news-view {
+}
+.news-view .info-hd {
+    text-align: center;
+}
+.news-view .info-hd h2 {
+    font-size: 20px;
+    color: #333;
+    font-weight: normal;
+}
+.news-view .info-hd p {
+    color: #666;
+}
+.news-view .info-hd p span {
+    margin: 0 10px;
+}
+.news-view .info-bd {
+    padding: 30px 10px;
+    line-height: 1.8;
+}
+.news-view .info-bd p {
+    color: #666;
+}
+.news-view .info-bd img {
+    margin: 20px 0;
+}
+.news-view .info-page {
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    color: #666;
+}
+.news-view .info-page a.back {
+    float: right;
+    color: #666;
+}
+.news-view .info-page p {
+    line-height: 2;
+}
+.news-view .info-page a:hover {
+    color: #E53E3E;
+    text-decoration: underline;
+}

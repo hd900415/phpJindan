@@ -1,0 +1,306 @@
+@charset "utf-8";
+html {
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;/*取消浏览器最小字体限制*/
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], input:focus, button:focus, select:focus, textarea:focus {
+	outline: none;
+}
+
+input {
+	font-family: "微软雅黑";
+	-webkit-appearance: none;
+	resize: none;
+	border-radius: 0;
+}
+
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+	-ms-interpolation-mode: bicubic;
+}
+
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+em, i {
+	font-style: normal;
+}
+
+strong {
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+img {
+	border: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+.flex{
+	display: flex;
+}
+.flex-center{
+	display: flex;
+	align-items: center;
+}
+.flex-center-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex-end{
+	display: flex;
+	align-items: flex-end;
+}
+.flex-between{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.flex-wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-direction{
+	display: flex;
+	flex-direction:column;
+}
+.ellipsis01{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.ellipsis02{
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+body {
+	margin: 0 auto;
+	font-size: 0.6rem;
+	-webkit-text-size-adjust: none!important;/*取消浏览器最小字体限制*/
+	-webkit-overflow-scrolling: touch;/*流畅滚动*/
+	font-family: "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/*底部*/
+
+.pb_120{
+	padding-bottom: 3.0rem;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background:rgba(24,13,72,1);
+	z-index: 9;
+	box-shadow:0px 4px 20px 0px rgba(163,0,96,0.2);
+}
+footer ul{
+	display: flex;
+}
+footer li{
+	width: 20%;
+	text-align: center;
+}
+footer img{
+	width: 1.75rem;
+	height: 1.75rem;
+	vertical-align: middle;
+}
+footer p{
+	color: #CBD1FF;
+	font-size: 0.45rem;
+	line-height: 0.5rem;
+	font-weight:400;
+	padding-bottom: 0.2rem;
+	text-align: center;
+}
+@-webkit-keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+            transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+            transform: scale3d(.97, .97, .97);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+            transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+            transform: scale3d(.97, .97, .97);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn{
+    animation: bounceIn 0.75s;
+}
+
+/*弹窗*/
+.tipmodel {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/*帮助中心*/
+#help .help_box{
+  width:16.0rem;
+  height:22.825rem;
+  background:rgba(237,226,255,1);
+  border-radius:0.25rem;
+  position: relative;
+}
+#help .help_box .title{
+  text-align: center;
+  margin:1.25rem auto;
+  font-weight:bold;
+  color: #333333;
+  font-size: 0.9rem;
+}
+#help .help_box .item{
+  margin-bottom: 0.75rem;
+}
+#help .help_box .item .num{
+  width:0.8rem;
+  height:0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  color: white;
+  font-size: 0.6rem;
+  background:linear-gradient(90deg,rgba(237,85,123,1),rgba(217,67,105,1));
+  border-radius:50%;
+  margin-left: 0.975rem;
+  margin-right: 0.5rem;
+}
+#help .help_box .item .txt{
+  font-size:0.7rem;
+  color:rgba(51,51,51,1);
+  line-height:1rem;
+  margin-top: -0.1rem;
+}
+#help .know{
+  width: 8.725rem;
+  height: 2.625rem;
+  background: url(../img/help_bg.png) center no-repeat;
+  background-size: 100% 100%;
+  font-size:0.9rem;
+  font-weight:400;
+  text-align: center;
+  color: white;
+  line-height: 1.7rem;
+  letter-spacing: 1px;
+  text-indent: 1px;
+  margin:auto;
+}
+#help .help_close{
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  right: -0.625rem;
+  top: -0.625rem;
+}

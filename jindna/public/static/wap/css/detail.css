@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+body{background-color: #ebebeb;}
+.bg_white{background-color: white;}
+/*轮播*/
+#banner_game {
+	width: 100%;
+	overflow: hidden;
+	position:relative;
+}
+#banner_game .swiper-slide {
+	position:relative;
+	text-align:center;
+}
+#banner_game img {
+	width: 100%;
+    height: 12.25rem;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 0.5rem;
+  width: 66px;
+  text-align: center;
+  right:0;
+}
+.swiper-pagination-bullet {
+  display: inline-block;
+  margin: 0 2px;
+  opacity: 1!important;
+  cursor: pointer;
+  background: #ebebeb!important;
+}
+.swiper-pagination-bullet-active {
+  background: #ff3e41!important;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom:10px!important;
+}
+
+.w88{
+    width: 88%;
+    margin:auto;
+    overflow: hidden;
+}
+.title{
+    margin:0.225rem 0 0.5rem;
+    font-size: 0.7rem;
+    color: #333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.price{
+    display: block;
+    float: left;
+    margin-right: 0.5rem;
+    color: #ff3e41;
+    font-size: 0.7rem;
+}
+.jindou{
+    float: left;
+    color: #ff3e41;
+    margin-right: 0.5rem;
+    padding: 0.1rem;
+    border: 1px solid #ff3e41;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    border-radius: 0.2rem;
+}
+.jindou img {
+    width: 0.55rem;
+    height: 0.55rem;
+    margin-top: 0.1rem;
+    padding-left: 0.1rem;
+}
+.xiaoliang{
+    float: right;
+    font-size: 0.6rem;
+    color: #666
+}
+.yunfei{
+    float: left;
+    font-size: 0.6rem;
+    color: #666
+}
+.xq_bottom{
+    overflow: hidden;
+    margin:0.4rem 0 0.5rem;
+}
+.fenlei h1{
+    padding:0.58rem 0;
+    font-size: 0.7rem;
+    color: #333;
+    font-weight: bold;
+}
+.fenlei .qiehuan{
+    display: inline-block;
+    height: 1.625rem;
+    line-height: 1.625rem;
+    font-size: 0.6rem;
+    color: #333;
+    background-color: #f5f5f5;
+    padding:0 0.375rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.35rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+}
+.fenlei .active{
+    color: white;
+    background: -webkit-linear-gradient(left, #ff403f , #ff7306); 
+    background: -o-linear-gradient(right, #ff403f, #ff7306); 
+    background: -moz-linear-gradient(right, #ff403f, #ff7306);
+    background: linear-gradient(to right, #ff403f , #ff7306); 
+}
+
+.fenlei .shuliang{
+    float: left;
+    width: 3rem;
+    height: 1.76rem;
+    line-height: 1.76rem;
+    font-size: 0.7rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.shop-arithmetic {
+    float: right;
+    height: 1.625rem;
+    line-height: 1.625rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #dddddd;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+}
+.shop-arithmetic a {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.625rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+}
+.shop-arithmetic .num {
+    width: 2.375rem;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+.xqt{padding-bottom: 3.0rem;}
+.ts{
+    width: 7.25rem;
+    margin:0.5rem auto;
+}
+.ts .hx {
+    display: inline-block;
+    width: 25.8%;
+    height: 1px;
+    background: #aaa;
+}
+.ts p {
+    display: inline-block;
+    position: relative;
+    top: 0.2rem;
+    font-size: 0.7rem;
+    color: #333;
+    font-weight: bold;
+}
+.xqt img{
+    width: 100%;
+    margin:auto;
+    vertical-align: middle
+}
+.go{
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    background-color: white;
+}
+.go .icon-shoucang{
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 0.1rem
+}
+.go .icon-shoucang1{color:#da0917 }
+.go .shoucang{
+    margin-top: 0.65rem;
+    margin-left: 0.75rem
+}
+.go span{
+    font-size: 0.75rem;
+    color: #333;
+}
+.go .right a{
+    padding:0.75rem;
+    display: block;
+    float: left;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #da0917
+}
+.go .right .a2{
+    background-color: #ff7800
+}
+
+/*固定小图标*/
+.fixed{
+    width: 2.8rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    position: fixed;
+    left: 0.75rem;
+    bottom:3.5rem;
+    z-index: 9999;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.fixed i{
+     font-size: 1.4rem!important;
+}
+.fixed .num{
+    width: 0.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    background-color: #ff3e41;
+    position: relative;
+    top:-2.2rem;
+    left:2rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+
+/*底部新增*/
+.payment-bar{
+    clear:both;
+    width:100%;
+    height:2.5rem;
+    line-height: 2.5rem;
+    position:fixed;
+    bottom:0;
+    font-size:0.75rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    color: white;
+    background:linear-gradient(270deg,rgba(255,102,102,1) 0%,rgba(255,142,142,1) 100%);
+}

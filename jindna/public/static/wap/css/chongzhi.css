@@ -1,0 +1,116 @@
+
+body {
+    background-color: #FEF7EE;
+}
+
+.wallet {
+    background: #FFFFFF;
+    box-shadow:0px 0.075rem 0.125rem 0px rgba(255,171,50,0.12);
+    padding: .85rem .75rem .75rem .75rem;
+    margin-top: .75rem;
+}
+
+.my-balance {
+    color: #3D3435;
+    font-size: .6rem;
+}
+.balance{
+    margin-top: .75rem;
+}
+.balance p{
+    display: inline-block;
+    vertical-align: middle;
+}
+.balance img{
+    width: 1.425rem;
+    height: 1.45rem;
+    vertical-align: middle;
+    margin-right: .9rem;
+}
+.balance-number span:nth-child(1){
+    color: #3D3435;
+    font-size: 1.5rem;
+}
+.balance-number span:nth-child(2){
+    color: #3D3435;
+    font-size: .6rem;
+}
+.Cashier{
+    border-radius: .25rem;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.active{
+    background:#FFAB32!important;
+    border-radius:10px;
+
+}
+.active span{
+    color: #FFFFFF !important;
+}
+.close-1{
+    position: absolute;
+    right: 0;
+    width: .75rem;
+    height: .75rem;
+    margin: 1rem 1rem;
+}
+.tabs{
+    padding-left:0.6rem;
+}
+.tabs li{
+    width:5.575rem;
+    height:3.75rem;
+    border:1px solid #FFAB32;
+    border-radius:.25rem;
+    text-align: center;
+    margin-top: .5rem;
+    margin-right: 0.325rem;
+    background: #FFFFFF;
+}
+.tabs li:nth-child(3n){
+    margin-right: 0;
+}
+.number-1{
+    margin-top: .5rem;
+}
+.number-1 span:nth-child(1){
+    font-size: 1.25rem;
+    color: #FFCC5E;
+    font-weight:bold;
+
+}
+.number-1 span:nth-child(2){
+    font-size: .8rem;
+    color: #FFCC5E;
+}
+.number-2 img{
+    width: .5rem;
+    height: .5rem;
+}
+.number-2 span{
+    font-size: .6rem;
+    color: #FFCC5E;
+}
+
+.but{
+    text-align: center;
+    margin-top: 1.75rem;
+}
+.but button{
+    width: 16rem;
+    height:2rem ;
+    background:linear-gradient(127deg,rgba(255,200,113,1),rgba(255,171,50,1));
+    border-radius:1rem;
+    color: #FFFFFF;
+    font-size: 0.7rem;
+    font-weight:500;
+}
+
+.choose_txt{
+    color: #3D3435;
+    font-size: 0.6rem;
+    padding-left: 0.75rem;
+    padding-top: 1.0rem;
+}

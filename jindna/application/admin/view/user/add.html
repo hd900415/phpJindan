@@ -1,0 +1,102 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Nickname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-nickname" data-rule="required" class="form-control" name="row[nickname]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Headimage')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-headimage" data-rule="required" class="form-control" size="50" name="row[headimage]" type="text">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-headimage" class="btn btn-danger plupload" data-input-id="c-headimage" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-headimage"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-headimage" class="btn btn-primary fachoose" data-input-id="c-headimage" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-headimage"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-headimage"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Openid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-openid" data-rule="required" class="form-control" name="row[openid]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Jine')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-jine" data-rule="required" class="form-control" step="0.01" name="row[jine]" type="number" value="0.00">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Yongjin')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-yongjin" data-rule="required" class="form-control" step="0.01" name="row[yongjin]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Jifen')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-jifen" data-rule="required" class="form-control" name="row[jifen]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fudai')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fudai" data-rule="required" class="form-control" name="row[fudai]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Game')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-game" data-rule="required" class="form-control" name="row[game]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Tuid1')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tuid1" data-rule="required" class="form-control" name="row[tuid1]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Tuid2')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tuid2" data-rule="required" class="form-control" name="row[tuid2]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Tuid3')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tuid3" data-rule="required" class="form-control" name="row[tuid3]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Yiji_bili')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-yiji_bili" class="form-control" step="0.01" name="row[yiji_bili]" type="number" value="0.00">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Erji_bili')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-erji_bili" class="form-control" step="0.01" name="row[erji_bili]" type="number" value="0.00">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sanji_bili')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sanji_bili" class="form-control" step="0.01" name="row[sanji_bili]" type="number" value="0.00">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

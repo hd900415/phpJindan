@@ -1,0 +1,139 @@
+body{ margin: 0;padding: 0;font-family: "微软雅黑";overflow: hidden;}
+body,html{-webkit-text-size-adjust: none;width: 100%;height: 100%;}
+*{text-decoration: none;list-style: none;}
+img{border: 0px;}
+ul,li,dl,dd,dt,p,ol,h1,h2,h3,h4,h5{font-size: 12px;font-weight: 100;padding: 0;margin: 0;}
+.wrap{margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.index{overflow: hidden;}
+.clr{clear:both; height:0px; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+.pointer{cursor:pointer;}
+a,input,button{ outline:none; }
+
+a{color: #000;
+outline:none;
+-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+-webkit-user-select: none;
+-moz-user-focus: none;
+-moz-user-select: none;
+}
+.wrapper{clear: both;width: 100%;}
+
+
+        /*充值的页面*/
+.recharge{
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:46%;
+    background:#ffffff;
+    padding:30px 1rem;
+    color:#EC6243;
+    border-radius: 0.3rem;
+    justify-content: center;
+    font-size:15px;
+    z-index:3333;
+    font-weight: 600;
+    box-shadow: 1px 1px 1px #EEA7C3;
+}
+.recharge span{
+    margin:0.5rem 0;
+    font-weight: bold;
+}
+.chargeimg{
+    width:100%;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.payBtn{
+    background:#EC6243;
+    color:#ffffff;
+    font-size:16px;
+    width:80%;
+    height:40px;
+    font-weight: 400;
+    line-height:40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 3px 0 #DB3427;
+}
+/*充值选取价格列表*/
+.pricetitle{
+    text-align: center;
+    font-size:16px;
+    font-weight: 550;
+}
+.coins{
+    margin:40px 0 20px;
+}
+.pricelist{
+    flex-wrap: wrap;
+}
+.priceitem{
+    width: 45%;
+    height: 60px;
+    justify-content: center;
+    margin:0 2%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #EC6243;
+}
+.between{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.priceitem>text:nth-child(1){
+    font-size:16px;
+    font-weight: 550;
+}
+.coin{
+    width:26px;
+    height:26px;
+    margin-right:6px;
+    border-radius: 13px;
+}
+/*公告展示的蒙版*/
+.notices{
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:72%;
+    background:#ffffff;
+    padding:30px 20px 10px;
+    color:#EC6243;
+    min-height: 1rem;
+    max-height:20rem;
+    border-radius: 6px;
+    z-index:333;
+}
+.content{
+    overflow-y: auto;
+    max-height:20rem;
+}
+
+/*关闭公告*/
+.closeNotices{
+    position:absolute;
+    top:-15px;
+    right:-15px;
+    background:#717171;
+    width:30px;
+    text-align: center;
+    height:30px;
+    line-height: 30px;
+    border-radius: 15px;
+    color:#ffffff;
+}

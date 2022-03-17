@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>添加晒单</title>
+	<link rel="stylesheet" href="/static/wap/css/reset.css">
+	<script type="text/javascript" src="/static/wap/js/pxtorem.js"></script>
+	<script type="text/javascript" src="/static/wap/js/jquery.min.js"></script>
+	<!-- 引入样式文件 -->
+	<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/vant@2.12/lib/index.css"
+	/>
+	<!-- 引入 Vue 和 Vant 的 JS 文件 -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vant@2.12/lib/vant.min.js"></script>
+  <style >
+    /* .w670{
+      width: 16.75rem;
+      margin: auto;
+    }
+    .input_list .item{
+        margin-top:.75rem;
+    }
+    .input_list .item label{
+        display: block;
+        font-size:.7rem;
+        font-weight:400;
+        color:rgba(0,0,0,1);
+        letter-spacing:1px;
+        margin-bottom: .25rem;
+    }
+    .input_list .van-cell{
+        padding: .7rem .75rem;
+        line-height: normal;
+        border-radius: .4rem;
+        font-size:.7rem;
+        font-weight:400;
+    } */
+    .input_list .item label{
+        display: block;
+        font-size:.7rem;
+        font-weight:400;
+        color:#646566;
+        letter-spacing:1px;
+        padding-left: 16px;
+        
+    }
+    .img_list{
+        padding-top: .9rem;
+        padding-left: .9rem;
+        border-radius: .4rem;
+    }
+    </style>
+</head>
+<body>
+<div id="app">
+  <div class="wrap">  
+    <div class="w670 input_list">
+        <div class="item">
+            <van-field v-model="gift"  label="礼物名称：" placeholder="请输入礼物名称" />
+        </div>
+        <div class="item">
+          <van-field
+            v-model="desc"
+            rows="1"
+            autosize
+            label="礼物描述："
+            type="textarea"
+            placeholder="请输入礼物描述"
+          />
+        </div>
+        <div class="item">
+            <label>礼物图片：</label>
+            <div class="white_bg img_list">
+                <van-uploader
+                    v-model="fileList"
+                    multiple
+                    :after-read="afterRead"
+                    @delete="delete_img"
+                />
+            </div>
+        </div>
+        <div style="height: 2rem;"></div>
+        <van-button type="primary" block style="width: 95%;margin: auto;" @click="onClickRight">提 交</van-button>
+    </div>
+</div>
+</div>
+<script>
+new Vue({
+	el: '#app',
+	data() {
+		return {
+      gift:'',
+      desc:'',
+      show: false,
+      category_id:'',
+      fileList: [],
+      img_arr:[],
+		};
+	},
+  mounted() {
+    var that=this
+    
+  },
+	methods: {
+    onClickRight() {
+            // 提交
+            var that=this;
+            if(that.gift==""){
+                that.$toast('请输入礼物名称')
+                return false
+            }else if(that.desc==""){
+                that.$toast('请输入礼物描述')
+                return false
+            }else if(that.img_arr.length==0){
+                that.$toast('请上传图片')
+                return false
+            }
+            $.post("{:url('index/add_shaidan')}",{
+                gift:that.gift,
+                desc:that.desc,
+                images:that.img_arr.join(",")
+            },function(data){
+              if(data.code==1){
+                that.$toast({
+                    message:data.msg,
+                    duration:2000,
+                    onClose: function(){
+                        location.href="{:url('index/shaidan')}"
+                    }
+                });
+              }else{
+                that.$toast({
+                    message:data.msg,
+                    duration:2000,
+                });
+              }
+            })
+        },
+        //图片上传
+        afterRead(file) {
+            var that=this
+            var formdata = new FormData(); //创建form对象
+            formdata.append("file", file.file);
+            $.ajax({
+                url : "{:url('index/upload')}",
+                type : 'POST',
+                data : formdata,
+                // 告诉jQuery不要去处理发送的数据
+                processData : false,
+                // 告诉jQuery不要去设置Content-Type请求头
+                contentType : false,
+                dataType: "json",
+                success: function(data) {
+                    if(data.code==1){
+                        that.img_arr.push(data.data.url)
+                        console.log(that.img_arr)
+                    }
+                }
+            })
+        },
+        // 删除图片
+        delete_img(file,detail){
+          // detail.index  下标
+          var that=this
+          that.img_arr.splice(detail.index,1); 
+        },
+	},
+});
+</script>
+</body>
+</html>

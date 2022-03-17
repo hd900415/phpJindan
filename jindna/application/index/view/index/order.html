@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>心愿礼盒</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=0"
+        name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    
+    <link href="/static/wap/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/static/wap/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/static/wap/css/dialog-ui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/static/wap/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/static/wap/js/layer.js"></script>
+    <script type="text/javascript" src="/static/wap/js/dialog.js"></script>
+    <script type="text/javascript" src="/static/wap/js/TouchSlide.1.1.js"></script>
+    <script type="text/javascript" src="/static/wap/js/zooyoo.js"></script>
+    <script type="text/javascript" src="/static/wap/js/ajaxLoad.js"></script>
+    <script src="/static/wap/js/fx.js"></script>
+    <script src="/static/wap/js/common.js"></script>
+</head>
+
+<body class="gray-bg ">
+    <section id="container">
+        <div class="page">
+            <div class="tabs fixed">
+                <div class="tab-nav">
+                    <a href="javascript:;" class="tab-item on"><span>全部</span></a>
+                    <!-- <a href="javascript:;" class="tab-item"><span>待付款</span></a> -->
+                    <a href="javascript:;" class="tab-item"><span>待选择</span></a>
+                    <a href="javascript:;" class="tab-item"><span>已兑换</span></a>
+                    <a href="javascript:;" class="tab-item"><span>待发货</span></a>
+                    <a href="javascript:;" class="tab-item"><span>已发货</span></a>
+                    <div class="tab-bar"></div>
+                </div>
+            </div>
+            <div class="h-90"></div>
+            <ul class="order-list">
+
+            </ul>
+        </div>
+
+    </section>
+
+
+    <script>
+        $(function () {
+
+            listId = ".order-list";
+            moreId = ".loadmore";
+            page = "1";
+            status = "0";
+            moreURL = "{:url('index/order')}";
+
+            //初始加载
+            load_more(moreURL, { p: page, status: status });
+            //滚动加载
+            $(window).scroll(function () {
+                if ($(window).height() + $(window).scrollTop() >= $(document).height()) {
+                    load_more(moreURL, { p: page, status: status });
+                }
+            });
+
+
+
+            $(".tabs").tab({
+                isFixed: true,
+                callback: function (index) {
+                    status = index;
+                    page = 1;
+                    hasMore = true;
+                    isLoading = false;
+                    load_more(moreURL, { p: page, status: status });
+                }
+            });
+        })
+    </script>
+    <script>
+        function queren(id){
+            layer.open({
+                    content: '您确定已经收到包裹了吗？'
+                    , btn: ['确定', '取消']
+                    , skin: 'footer'
+                    , yes: function (index) {
+                        $.ajax({
+                            type: "post",
+                            url: "{:url('index/confirm_order')}",
+                            data: { id: id },
+                            success: function (res) {
+                                layer.close(index);
+                                if (res.code) {
+                                    if (res.code) {
+                                        layer.open({
+                                            content: res.msg
+                                            , skin: 'msg'
+                                            , time: 2 //2秒后自动关闭
+                                        });
+                                        setTimeout(function () {
+                                            window.location.reload();
+                                        }, 2000);
+
+                                    }
+                                } else {
+                                    layer.open({
+                                        content: res.msg
+                                        , skin: 'msg'
+                                        , time: 3 //2秒后自动关闭
+                                    });
+                                }
+                            },
+                            error: function () {
+                                layer.close(index);
+                                layer.open({
+                                    content: "网络故障操作失败"
+                                    , skin: 'msg'
+                                    , time: 3 //2秒后自动关闭
+                                });
+                            }
+                        });
+                    }
+                });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.main {
+    width:100%;
+    height:100%;
+}
+.main_list {
+    width:100%;
+    height:1rem;
+    border-bottom:1px solid #e2e2e2;
+    display: -webkit-flex;
+    display:flex;
+    -webkit-align-items: center;
+    align-items: center;
+    padding:0 0.3rem;
+    box-sizing: border-box;
+}
+.main_list span {
+    color:#888888;
+    font-size:0.25rem;
+}
+.main_list input {
+    width:70%;
+    height:100%;
+    display: -webkit-flex;
+    display:flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-right:auto;
+    margin-left:0.15rem;
+    border:0;
+    font-size:0.28rem;
+    background:none;
+}
+.main_list img {
+    width:0.37rem;
+    height:0.44rem;
+}
+.submit {
+    width:80%;
+    height: 0.92rem;
+    margin: 0 auto;
+    display:block;
+    background:none;
+    border:0;
+    margin-top: 0.56rem;
+    background: url(../image/gaui.png)no-repeat;
+    background-size: 100%;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+/*.submit img{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}*/

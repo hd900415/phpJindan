@@ -1,0 +1,1111 @@
+---------------------------------------------------------------
+[ 2021-12-27T23:27:15+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.061550s] [吞吐率：16.25req/s] [内存消耗：3,553.43kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001404s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:25+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.075045s] [吞吐率：13.33req/s] [内存消耗：3,553.48kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000033s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001552s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002172s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:25+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.065509s] [吞吐率：15.27req/s] [内存消耗：3,553.48kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001613s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002333s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:35+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.061810s] [吞吐率：16.18req/s] [内存消耗：3,553.48kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001551s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002276s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:36+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/goods.html
+[运行时间：0.070058s] [吞吐率：14.27req/s] [内存消耗：3,609.59kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001641s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002317s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->goods[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/hezi.com/public/../application/index/view/index/goods.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:36+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.066809s] [吞吐率：14.97req/s] [内存消耗：3,553.48kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001590s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002225s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:37+08:00 ] 111.85.6.54 POST hezi.mazhongyuan.top:88/index/index/category.html
+[运行时间：0.067837s] [吞吐率：14.74req/s] [内存消耗：3,548.84kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001700s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/goods.html',
+  'origin' => 'http://hezi.mazhongyuan.top:88',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002477s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->category[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:38+08:00 ] 111.85.6.54 POST hezi.mazhongyuan.top:88/index/index/goods.html
+[运行时间：0.076443s] [吞吐率：13.08req/s] [内存消耗：3,708.96kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001917s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/goods.html',
+  'origin' => 'http://hezi.mazhongyuan.top:88',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'content-length' => '15',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002293s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->goods[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:48+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/shouye.html
+[运行时间：0.067431s] [吞吐率：14.83req/s] [内存消耗：3,653.24kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001581s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'shouye',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qingfenggzh.ekingo.mobi/r/ff793994c439919f7ea895798f86899e.php?appid=wx258b9c67e5bc8aa5&redirect_uri=http%3A%2F%2Fhezi.mazhongyuan.top%3A88%2Findex%2Flogin%2Flogin.html%3Fp_id%3D5060&response_type=code&scope=snsapi_userinfo&state=51870634&code=071h4h000ERA1N1nL9400mRitm2h4h0M&state=51870634',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002331s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->shouye[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/hezi.com/public/../application/index/view/index/shouye.html [ array (
+  0 => 'user',
+  1 => 'box_price',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:48+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.060131s] [吞吐率：16.63req/s] [内存消耗：3,553.48kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001526s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002143s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:58+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.075160s] [吞吐率：13.30req/s] [内存消耗：3,553.48kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001746s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002287s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:27:59+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.067382s] [吞吐率：14.84req/s] [内存消耗：3,553.48kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001724s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002373s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:09+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/login/login.html?p_id=5060&code=041EuRFa14G6nC076kHa1Hx6Lr1EuRFk&state=51870634
+[运行时间：0.201768s] [吞吐率：4.96req/s] [内存消耗：3,268.91kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001594s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qingfenggzh.ekingo.mobi/r/ff793994c439919f7ea895798f86899e.php?appid=wx258b9c67e5bc8aa5&redirect_uri=http%3A%2F%2Fhezi.mazhongyuan.top%3A88%2Findex%2Flogin%2Flogin.html%3Fp_id%3D5060&response_type=code&scope=snsapi_userinfo&state=51870634&code=041EuRFa14G6nC076kHa1Hx6Lr1EuRFk&state=51870634',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'p_id' => '5060',
+  'code' => '041EuRFa14G6nC076kHa1Hx6Lr1EuRFk',
+  'state' => '51870634',
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002464s ]
+[ info ] [ RUN ] app\index\controller\Login->login[ /www/wwwroot/hezi.com/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:09+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/index.html
+[运行时间：0.064907s] [吞吐率：15.41req/s] [内存消耗：3,614.70kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001565s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qingfenggzh.ekingo.mobi/r/ff793994c439919f7ea895798f86899e.php?appid=wx258b9c67e5bc8aa5&redirect_uri=http%3A%2F%2Fhezi.mazhongyuan.top%3A88%2Findex%2Flogin%2Flogin.html%3Fp_id%3D5060&response_type=code&scope=snsapi_userinfo&state=51870634&code=041EuRFa14G6nC076kHa1Hx6Lr1EuRFk&state=51870634',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002291s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:09+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/shouye.html
+[运行时间：0.069228s] [吞吐率：14.45req/s] [内存消耗：3,653.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001770s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'shouye',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qingfenggzh.ekingo.mobi/r/ff793994c439919f7ea895798f86899e.php?appid=wx258b9c67e5bc8aa5&redirect_uri=http%3A%2F%2Fhezi.mazhongyuan.top%3A88%2Findex%2Flogin%2Flogin.html%3Fp_id%3D5060&response_type=code&scope=snsapi_userinfo&state=51870634&code=041EuRFa14G6nC076kHa1Hx6Lr1EuRFk&state=51870634',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002362s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->shouye[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/hezi.com/public/../application/index/view/index/shouye.html [ array (
+  0 => 'user',
+  1 => 'box_price',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:10+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.066416s] [吞吐率：15.06req/s] [内存消耗：3,553.41kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001688s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002467s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:13+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/login/login.html?p_id=5060&code=031lHCkl2Rpum844Jwll2u0C2Q2lHCk8&state=51870634
+[运行时间：0.210404s] [吞吐率：4.75req/s] [内存消耗：3,268.91kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000033s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001449s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qingfenggzh.ekingo.mobi/r/ff793994c439919f7ea895798f86899e.php?appid=wx258b9c67e5bc8aa5&redirect_uri=http%3A%2F%2Fhezi.mazhongyuan.top%3A88%2Findex%2Flogin%2Flogin.html%3Fp_id%3D5060&response_type=code&scope=snsapi_userinfo&state=51870634&code=031lHCkl2Rpum844Jwll2u0C2Q2lHCk8&state=51870634',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'p_id' => '5060',
+  'code' => '031lHCkl2Rpum844Jwll2u0C2Q2lHCk8',
+  'state' => '51870634',
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002061s ]
+[ info ] [ RUN ] app\index\controller\Login->login[ /www/wwwroot/hezi.com/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:13+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/index.html
+[运行时间：0.066636s] [吞吐率：15.01req/s] [内存消耗：3,614.70kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001671s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qingfenggzh.ekingo.mobi/r/ff793994c439919f7ea895798f86899e.php?appid=wx258b9c67e5bc8aa5&redirect_uri=http%3A%2F%2Fhezi.mazhongyuan.top%3A88%2Findex%2Flogin%2Flogin.html%3Fp_id%3D5060&response_type=code&scope=snsapi_userinfo&state=51870634&code=031lHCkl2Rpum844Jwll2u0C2Q2lHCk8&state=51870634',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002459s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:13+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/shouye.html
+[运行时间：0.067783s] [吞吐率：14.75req/s] [内存消耗：3,653.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001725s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'shouye',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qingfenggzh.ekingo.mobi/r/ff793994c439919f7ea895798f86899e.php?appid=wx258b9c67e5bc8aa5&redirect_uri=http%3A%2F%2Fhezi.mazhongyuan.top%3A88%2Findex%2Flogin%2Flogin.html%3Fp_id%3D5060&response_type=code&scope=snsapi_userinfo&state=51870634&code=031lHCkl2Rpum844Jwll2u0C2Q2lHCk8&state=51870634',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002201s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->shouye[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/hezi.com/public/../application/index/view/index/shouye.html [ array (
+  0 => 'user',
+  1 => 'box_price',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:13+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.066412s] [吞吐率：15.06req/s] [内存消耗：3,553.41kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001611s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002305s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:16+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/login/login.html?p_id=5060&code=0611pjFa1AwymC0IAiHa1gdzo131pjFa&state=51870634
+[运行时间：0.211893s] [吞吐率：4.72req/s] [内存消耗：3,268.91kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001710s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qingfenggzh.ekingo.mobi/r/ff793994c439919f7ea895798f86899e.php?appid=wx258b9c67e5bc8aa5&redirect_uri=http%3A%2F%2Fhezi.mazhongyuan.top%3A88%2Findex%2Flogin%2Flogin.html%3Fp_id%3D5060&response_type=code&scope=snsapi_userinfo&state=51870634&code=0611pjFa1AwymC0IAiHa1gdzo131pjFa&state=51870634',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'p_id' => '5060',
+  'code' => '0611pjFa1AwymC0IAiHa1gdzo131pjFa',
+  'state' => '51870634',
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002472s ]
+[ info ] [ RUN ] app\index\controller\Login->login[ /www/wwwroot/hezi.com/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:16+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/index.html
+[运行时间：0.069194s] [吞吐率：14.45req/s] [内存消耗：3,614.70kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001502s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qingfenggzh.ekingo.mobi/r/ff793994c439919f7ea895798f86899e.php?appid=wx258b9c67e5bc8aa5&redirect_uri=http%3A%2F%2Fhezi.mazhongyuan.top%3A88%2Findex%2Flogin%2Flogin.html%3Fp_id%3D5060&response_type=code&scope=snsapi_userinfo&state=51870634&code=0611pjFa1AwymC0IAiHa1gdzo131pjFa&state=51870634',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002945s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:16+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/shouye.html
+[运行时间：0.064513s] [吞吐率：15.50req/s] [内存消耗：3,653.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001620s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'shouye',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qingfenggzh.ekingo.mobi/r/ff793994c439919f7ea895798f86899e.php?appid=wx258b9c67e5bc8aa5&redirect_uri=http%3A%2F%2Fhezi.mazhongyuan.top%3A88%2Findex%2Flogin%2Flogin.html%3Fp_id%3D5060&response_type=code&scope=snsapi_userinfo&state=51870634&code=0611pjFa1AwymC0IAiHa1gdzo131pjFa&state=51870634',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/tpg,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002312s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->shouye[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/hezi.com/public/../application/index/view/index/shouye.html [ array (
+  0 => 'user',
+  1 => 'box_price',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:28:16+08:00 ] 111.85.6.54 GET hezi.mazhongyuan.top:88/index/index/danmu.html
+[运行时间：0.062355s] [吞吐率：16.04req/s] [内存消耗：3,553.41kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001373s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'danmu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1hkm5v1kq6p8i2pfrhb4sma9n5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://hezi.mazhongyuan.top:88/index/index/shouye.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; MRD-TL00 Build/HUAWEIMRD-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3170 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/9108 MicroMessenger/8.0.16.2040(0x2800105A) Process/toolsmp WeChat/arm32 Weixin NetType/WIFI Language/zh_CN ABI/arm32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002268s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->danmu[ /www/wwwroot/hezi.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-12-27T23:43:43+08:00 ] 101.89.19.197 GET hezi.mazhongyuan.top:88/index/index/chongzhi.html
+[运行时间：0.058269s] [吞吐率：17.16req/s] [内存消耗：2,779.40kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001775s ]
+[ info ] [ LANG ] /www/wwwroot/hezi.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'chongzhi',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'hezi.mazhongyuan.top:88',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 MicroMessenger/6.5.5 NetType/WIFI Language/zh_CN',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/hezi.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002439s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

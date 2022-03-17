@@ -1,0 +1,106 @@
+
+  .container1{
+    position:absolute;
+    width:100%;
+    height:100%;  
+    
+    background-size:100% 100%;
+  }
+  .machImg{
+    position:fixed;
+    bottom:8vh;
+    width:84vw;
+    height:77.4vh;
+    margin:0 8vw;
+  }
+  .mactop{
+    position:fixed;
+    bottom:63.4vh;
+    width:100vw;
+    z-index:1;
+  }
+  .cloudImg{
+    position:fixed;
+    bottom:6vh;
+    width:100%;
+  }
+  .boxlist{
+    position:fixed;
+    width:69vw;
+    margin:0 16vw;
+    height:52vh;
+    bottom:24vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index:30;
+  }
+  .box_item{
+    width:33.3%;
+    height:13vh;
+    box-sizing: border-box;
+    position:relative;
+  }
+  .box_item>img{
+    position:absolute;
+    width:5.6vh;
+    left:50%;
+    bottom:5vh;
+    transform: translate(-50%);
+    z-index:33;
+  }
+  .box_item:nth-child(1)>img,.box_item:nth-child(4)>img,.box_item:nth-child(7)>img,.box_item:nth-child(10)>img{
+    left:14vw;
+  }
+  .box_item:nth-child(3)>img,.box_item:nth-child(6)>img,.box_item:nth-child(9)>img,.box_item:nth-child(12)>img{
+    left:8.6vw;
+  }
+  .doorBox{
+    position:absolute;
+    bottom:12.8vh;
+    width:62.8vw;
+    height:6.7vh;
+    left:50%;
+    transform: translate(-50%);
+    z-index:35;   
+  }
+  .door{
+    width: 100%;
+    height:100%;
+    animation-duration:0.5s;
+    transform-origin:100% 0px 0px;
+    background:rgba(255,255,255,0.6);
+  }
+
+  .buy_n{
+    width:7vw;
+    position:absolute;
+    top:40vh;
+    left:9vw;
+  }
+  .buy_ns{
+    width:7vw;
+    position:absolute;
+    top:40vh;
+    right:9vw;
+  }
+  .buy_p{
+    width:7vw;
+    position:absolute;
+    top:60vh;
+    right:9vw;
+    color:#A0200B;
+  }
+  .buy_p>img{
+    width:7vw;
+  }
+  .buy_p>span{
+    width:7vw;
+    text-align: center;
+    position:absolute;
+    top:3.1vh;
+    font-size:15px;
+    left:50%;
+    transform: translate(-50%);
+  }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>晒单</title>
+	<link rel="stylesheet" href="/static/wap/css/reset.css">
+	<link rel="stylesheet" href="/static/wap/css/shaidan.css">
+	<script type="text/javascript" src="/static/wap/js/pxtorem.js"></script>
+	<script type="text/javascript" src="/static/wap/js/jquery.min.js"></script>
+	<!-- 引入样式文件 -->
+	<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/vant@2.12/lib/index.css"
+	/>
+	<!-- 引入 Vue 和 Vant 的 JS 文件 -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vant@2.12/lib/vant.min.js"></script>
+</head>
+<body>
+<div id="app">
+<van-list
+    v-model="loading"
+    :finished="finished"
+    finished-text="没有更多了"
+    :offset="30"
+    @load="onLoad"
+>
+  <div class="main" v-for="(item,index) in items" :key="item.id">
+    <div class="flex-center">
+      <img :src="item.headimage" class="touxiang" alt="">
+      <p class="name">{{item.nickname}}</p>
+    </div>
+    <div class="grey">{{item.time}}&nbsp;&nbsp;&nbsp;&nbsp;{{item.gift}}</div>
+    <div class="txt">{{item.desc}}</div>
+    <div class="list flex-wrap">
+      <div class="item"v-for="(item_img,ind) in item.images" :key="ind">
+        <img :src="item_img" alt="" @click="showPreview(index,ind)">
+      </div>
+    </div>
+  </div>
+</van-list>
+<!-- 评论图预览 -->
+<van-image-preview
+    v-model="show"
+    :images="img_list"
+    :start-position="startPosition"
+>
+</van-image-preview>
+</div>
+<script>
+// 在 #app 标签下渲染一个按钮组件
+new Vue({
+	el: '#app',
+	data() {
+		return {
+			show: false,
+			index: 0,
+			startPosition:0,
+			images: [
+				// 'https://img01.yzcdn.cn/vant/apple-1.jpg',
+				// 'https://img01.yzcdn.cn/vant/apple-2.jpg',
+			],
+      img_list:[],
+      loading: false,
+      finished: false,
+      items:[],
+      page:1,
+      limit:15
+		};
+	},
+  mounted() {
+    var that=this
+    
+  },
+	methods: {
+    // 显示评论预览图
+    showPreview(index,ind){
+        this.show=true
+        this.startPosition=ind
+        this.img_list=this.images[index]
+    },
+    onLoad() {
+        var that=this;
+        // 异步更新数据
+        setTimeout(() => {
+          $.post("{:url('index/shaidan')}",{page:that.page,limit:that.limit},function(data){
+            if(data.data.data.length!=0){
+              for(var i=0;i<data.data.data.length;i++){
+                  that.items.push(data.data.data[i]);
+                  that.images.push(data.data.data[i].images)
+              } 
+              // 页数递增
+              that.page++ 
+              // 加载状态结束
+              that.loading = false;
+              // 数据全部加载完成
+              if (that.page==data.data.last_page+1) {
+                  that.finished = true;
+              }
+            }else{
+                // 加载状态结束
+                that.loading = false;
+                that.finished = true;
+            }
+          })
+        }, 300);
+    },
+	},
+});
+</script>
+</body>
+</html>

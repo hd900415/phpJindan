@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset="UTF-8">
+    <title>充值</title>
+    <link rel="stylesheet" href="/static/wap/css/reset.css" />
+    <link rel="stylesheet" href="/static/wap/css/chongzhi.css" />
+    <script type="text/javascript" src="/static/wap/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="/static/wap/js/pxtorem.js"></script>
+    <script type="text/javascript" src="/static/wap/layer/layer.js"></script>
+
+</head>
+
+<body>
+<div class="wallet">
+    <p class="my-balance">我的余额</p>
+    <div class="balance">
+        <p class="balance-number"><span>￥{$user['jine']}</span></p>
+    </div>
+</div>
+<section>
+    <div class="Cashier">
+        <p class="choose_txt">请选择充值金额</p>
+        <ul class="tabs flex-wrap">
+          {if $recharge_list}
+          {foreach($recharge_list as $k => $v)}
+            <li style="height: 2.75rem;" value="{$v}">
+                <p class="number-1"><span>{$v}</span> <span>元</span></p>
+            </li>
+          {/foreach}
+          {/if}
+        </ul>
+    </div>
+    <div class="but">
+        <button>立即充值</button>
+    </div>
+</section>
+<script>
+
+function jsApiCall(data){
+    WeixinJSBridge.invoke(
+        'getBrandWCPayRequest',{
+                                    "appId" :data.appId,
+                                    "timeStamp":data.timeStamp,
+                                    "nonceStr":data.nonceStr,
+                                    "package":data.package,  
+                                    "signType":data.signType,
+                                    "paySign":data.paySign
+                                },
+        function(res){
+            if(res.err_msg == "get_brand_wcpay_request:ok" ) {
+                location.reload();
+            }
+        }
+    );
+}
+var jine = 0;
+$(document).ready(function() {
+    $(".tabs li").click(function() {
+        $(".tabs li").removeClass("active");
+        $(this).addClass("active");
+        jine = $(this).val();
+    });
+});
+$('.but').click(function(){
+    if(jine <= 0){
+        layer.msg('请选择充值金额');
+        return;
+    }
+    $.post("{:url('index/chongzhi')}",{jine:jine},function(res){
+        if(res.code == 1){
+            jsApiCall(res.data);
+        }
+    })
+})
+</script>
+</body>
+</html>

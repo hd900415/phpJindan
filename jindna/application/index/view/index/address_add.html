@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>幸运金蛋</title>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/addons/hc_wish/template/mobile/js/flexible.min.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+    <script type="text/javascript" src="/addons/hc_wish/template/mobile/js/layer/layer.js"></script>
+
+    <script type="text/javascript">
+        wx.config({
+            debug: false,
+            appId: '',
+            timestamp: '',
+            nonceStr: '',
+            signature: '',
+            jsApiList: ['onMenuShareAppMessage', 'onMenuShareTimeline', 'openAddress', 'chooseWXPay', 'chooseImage', 'uploadImage']
+        });
+        wx.ready(function () {
+            wx.onMenuShareAppMessage({
+                title: '',
+                desc: '',
+                link: 'http://wq.suyituike.cn/app/index.php?i=1&c=entry&do=index&m=hc_wish',
+                imgUrl: ''
+            });
+            wx.onMenuShareTimeline({
+                title: '',
+                link: 'http://wq.suyituike.cn/app/index.php?i=1&c=entry&do=index&m=hc_wish',
+                imgUrl: ''
+            });
+        })
+        //获取共享地址
+        function openAddress() {
+            wx.openAddress({
+                success: function (res) {
+                    var username = res.userName; // 收货人姓名
+                    var mobile = res.telNumber; // 收货人手机号码
+                    var address = res.provinceName + res.cityName + res.countryName + res.detailInfo; // 详细收货地址信息
+                    $.ajax({
+                        type: "GET",
+                        url: "./index.php?i=1&c=entry&act=add&do=add&m=hc_wish",
+                        data: { username: username, mobile: mobile, address: address },
+                        dataType: "json",
+                        success: function (data) {
+                            window.location.reload();
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+
+    <link rel="stylesheet" href="/addons/hc_wish/template/mobile/css/css.css" />
+    <link rel="stylesheet" href="/addons/hc_wish/template/mobile/css/Add.css" />
+    <link rel="stylesheet" href="/addons/hc_wish/template/mobile/css/LArea.css">
+</head>
+
+<body>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-appearance: none; //去掉浏览器默认样式
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0 auto;
+            width: 100%;
+            min-height: 100%;
+            overflow-x: hidden;
+            -webkit-user-select: none;
+        }
+
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            -webkit-text-size-adjust: 100%; //关闭自动调整字体
+            -webkit-overflow-scrolling: touch;
+            overflow-scrolling: touch;
+        }
+    </style>
+    <div class="main">
+        <div class="main_list">
+            <span>收货人：</span>
+            <input type="text" name="username" placeholder="请输入收货人" />
+        </div>
+        <div class="main_list">
+            <span>手机号：</span>
+            <input type="text" name="mobile" placeholder="请输入手机号" />
+        </div>
+        <div class="main_list">
+            <span>所在地址：</span>
+            <input id="demo1" type="text" name="address1" readonly="" placeholder="请选择地址" value="">
+            <input id="value1" type="hidden" value="20,234,504">
+            <!--<img  src="/addons/hc_wish/template/mobile/image/diHi.png" alt="" />-->
+        </div>
+        <div class="main_list">
+            <span>详细地址：</span>
+            <input type="text" name="address2" placeholder="请输入详细地址" />
+        </div>
+        <input type="button" class="submit" value=" " />
+    </div>
+
+
+    <script src="/addons/hc_wish/template/mobile/js/LAreaData1.js"></script>
+    <script src="/addons/hc_wish/template/mobile/js/LArea.js"></script>
+    <script>
+
+        $('.submit').click(function () {
+            var username = $("input[name='username']").val()
+            var mobile = $("input[name='mobile']").val()
+            var address = $("input[name='address1']").val() + ',' + $("input[name='address2']").val()
+            $.ajax({
+                type: "POST",
+                url: "{:url('index/address_add')}",
+                data: { username: username, mobile: mobile, address: address },
+                dataType: "json",
+                success: function (data) {
+                    if(data.code > 0){
+                        layer.msg(data.msg,function(){
+                            history.back();
+                            return;
+                        });
+                    }else{
+                        layer.msg(data.msg);
+                    }
+                }
+            });
+        })
+
+        var area1 = new LArea();
+        area1.init({
+            'trigger': '#demo1', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+            'valueTo': '#value1', //选择完毕后id属性输出到该位置
+            'keys': {
+                id: 'id',
+                name: 'name'
+            }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+            'type': 1, //数据源类型
+            'data': LAreaData //数据源
+        });
+        area1.value = [0, 0, 0];//控制初始位置，注意：该方法并不会影响到input的value
+        var area2 = new LArea();
+        area2.init({
+            'trigger': '#demo2',
+            'valueTo': '#value2',
+            'keys': {
+                id: 'value',
+                name: 'text'
+            },
+            'type': 2,
+            'data': [provs_data, citys_data, dists_data]
+        });
+
+
+
+    </script>
+    <script>;</script>
+    <script type="text/javascript"
+        src="http://wq.suyituike.cn/app/index.php?i=1&c=utility&a=visit&do=showjs&m=hc_wish"></script>
+</body>
+
+</html>
